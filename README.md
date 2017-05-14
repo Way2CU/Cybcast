@@ -1,6 +1,6 @@
 # Cybcast Landing Page
 
-Marketging for security software landing page
+Marketing for security software landing page
 
 ## License
 
