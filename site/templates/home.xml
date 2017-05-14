@@ -8,7 +8,35 @@
 		</head>
 
 		<body>
-			<h1>חברת ההפצה סייבקאסט בע"מ</h1>
+			<cms:svg file="site_sprite.svg"/>
+			<!-- Header -->
+			<header>
+				<!-- Logo -->
+				<a href="#" class="logo">
+					<cms:svg file="site_sprite.svg" symbol="icon-logo"/>
+				</a>
+
+				<!-- Header article -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header_article"
+					group="header_articles"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+
+				<!-- Header contact form -->
+				<div class="form_container">
+					<h3><cms:text constant="fill_details" /></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+			</header>
 		</body>
 	</html>
 </document>
