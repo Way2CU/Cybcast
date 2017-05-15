@@ -5,3 +5,75 @@
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
  * Authors: Iliya Melishev
  */
+
+/**
+ * Secton features
+*/
+section.features {
+	text-align: center;
+
+
+	background-image: url(../images/mobile-header-roof.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 500px auto;
+	padding-top: 100px;
+
+	article {
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 1em;
+		padding-bottom: 50px;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+section.features div.article_list li {
+	display: block;
+	list-style: none;
+	position: relative;
+	text-align: initial;
+	box-sizing: border-box;
+	padding-bottom: 100px;
+
+
+
+	svg {
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 100px;
+		height: 100px;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 1.2em;
+		padding: 0 1em;
+		padding-bottom: 1em;
+	}
+
+	p {
+		margin: 0;
+		padding: 0 1em;
+
+		&:first-of-type {
+			padding: 0;
+		}
+	}
+
+	a {
+		.style_link(@color_turquoise, @color_turquoise);
+	}
+}

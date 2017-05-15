@@ -76,6 +76,11 @@
 						template="stock/article_generic.xml"
 						/>
 
+					<!-- Map on mobile -->
+					<cms:mobile>
+						<div id="map"></div>
+					</cms:mobile>
+
 					<!-- Contact links -->
 					<div class="contact">
 						<h4><cms:text constant="phones" /></h4>
@@ -124,6 +129,12 @@
 						</a>
 					</div>
 
+					<cms:mobile>
+						<div class="roof">
+							<cms:svg file="roof.svg"/>
+						</div>
+					</cms:mobile>
+
 					<!-- Footer form -->
 					<div class="form_container">
 						<h3><cms:text constant="fill_details" /></h3>
@@ -135,8 +146,18 @@
 					</div>
 				</div>
 
-				<!-- Google map -->
-				<div id="map"></div>
+				<!-- Google map desktop -->
+				<cms:desktop>
+					<div id="map"></div>
+				</cms:desktop>
+
+				<!-- Bottom logo on mobile -->
+				<cms:mobile>
+					<!-- Logo -->
+					<a href="#" class="logo">
+						<cms:svg file="site_sprite.svg" symbol="icon-logo"/>
+					</a>
+				</cms:mobile>
 			</footer>
 
 			<!-- Copyright -->

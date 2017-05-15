@@ -5,3 +5,132 @@
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
  * Authors: Iliya Melishev
  */
+
+header {
+	background-image: url(../images/mobile_header.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	background-color: black;
+	color: @color_white;
+
+	h1 {
+		margin: 0;
+		padding: 0.5em 0;
+	}
+}
+
+header a.logo {
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 90vw;
+
+	svg {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+header article {
+	color: @color_white;
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+}
+
+header div.form_container {
+	h3 {
+		color: @color_turquoise;
+		font-weight: 400;
+		text-align: center;
+		margin: 0;
+		padding: 0.5em;
+		font-size: 1.2em;
+	}
+}
+
+header div.form_container form {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1em 0;
+}
+
+header div.form_container form label {
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+header div.form_container form label input {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 0.5em;
+	background-color: fade(black, 40%);
+	width: calc(~'100% - 80px - 1em');
+
+	border: 2px solid @color_turquoise;
+	border-image: linear-gradient(to right, @color_turquoise, black, @color_turquoise);
+	border-color: @color_turquoise;
+	border-image-slice: 1;
+	color: @color_white;
+
+	&:focus {
+		border-color: @color_turquoise;
+		border-image: none;
+		border-image-slice: 1;
+		background-color: fade(@color_turquoise, 50%);
+	}
+}
+
+header div.form_container form label span {
+	display: inline-block;
+	vertical-align: middle;
+	color: @color_turquoise;
+	padding: 0 0.5em;
+	width: 70px;
+}
+
+header div.form_container form label span:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 20px;
+	margin-left: 0.5em;
+
+	background-image: url(../images/name.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header div.form_container form label:nth-of-type(2) span:before {
+	background-image: url(../images/phone.svg);
+}
+
+header div.form_container form label:nth-of-type(3) span:before {
+	background-image: url(../images/email.svg);
+}
+
+header div.form_container div.controls button {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	border: 2px solid @color_turquoise;
+	color: @color_turquoise;
+	background-color: black;
+	padding: 1em 0.5em;
+	margin-top: 0.5em;
+}
+
+
+header svg.roof {
+	display: block;
+	width: 100vw;
+	transform: rotate(180deg);
+}
