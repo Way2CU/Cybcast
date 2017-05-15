@@ -1,5 +1,16 @@
 {
     "site_title": "Cybcast",
     "fill_details": "מלאו את הפרטים ונציג יחזור אליכם בהקדם.",
-    "send": "שליחת טופס"
+    "send": "שליחת טופס",
+    "phones": "טלפונים",
+    "office": "משרד: ",
+    "erez": "מכירות ארז: ",
+    "gadi": "מכירות גדי: ",
+    "fax": "פקס: ",
+    "phone_office": "09-9607030",
+    "phone_erez": "6909001-050:",
+    "phone_gadi": "559989-054",
+    "fax_number": "09-9569565",
+    "copyright_holder": "Copyright &copy; 2017. by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>.",
+    "copyright_text": "All rights reserved."
 }
