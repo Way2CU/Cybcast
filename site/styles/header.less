@@ -42,7 +42,7 @@ header article {
 	}
 }
 
-.form_container {
+header div.form_container {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -62,21 +62,21 @@ header article {
 	}
 }
 
-.form_container form {
+header div.form_container form {
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 1em 0;
 }
 
-.form_container form label {
+header div.form_container form label {
 	display: inline-block;
 	vertical-align: middle;
 	width: 30%;
 	box-sizing: border-box;
 }
 
-.form_container form label input {
+header div.form_container form label input {
 	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
@@ -100,7 +100,7 @@ header article {
 	}
 }
 
-.form_container form label span {
+header div.form_container form label span {
 	display: inline-block;
 	vertical-align: middle;
 	color: @color_turquoise;
@@ -108,7 +108,7 @@ header article {
 	width: 70px;
 }
 
-.form_container form label span:before {
+header div.form_container form label span:before {
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -121,21 +121,21 @@ header article {
 	background-position: center;
 }
 
-.form_container form label:nth-of-type(2) span:before {
+header div.form_container form label:nth-of-type(2) span:before {
 	background-image: url(../images/phone.svg);
 }
 
-.form_container form label:nth-of-type(3) span:before {
+header div.form_container form label:nth-of-type(3) span:before {
 	background-image: url(../images/email.svg);
 }
 
-.form_container div.controls {
+header div.form_container div.controls {
 	display: inline-block;
 	vertical-align: middle;
 	width: 10%;
 }
 
-.form_container div.controls button {
+header div.form_container div.controls button {
 	display: block;
 	width: 100%;
 	border: 2px solid @color_turquoise;
@@ -149,5 +149,14 @@ header article {
 	&:hover {
 		font-weight: 700;
 		background-color: fade(@color_turquoise, 50%);
+	}
+}
+
+/*
+ * Tablet
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	header div.form_container form {
+		width: 95%;
 	}
 }
