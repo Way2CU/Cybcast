@@ -4,6 +4,7 @@
  	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaft946kNnfRF4CR66TKYGdQ8kHKZrBgg"></script>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
@@ -61,6 +62,89 @@
 					</cms:module>
 				</div>
 			</section>
+
+			<!-- Footer -->
+			<footer>
+				<!-- links and form -->
+				<div class="information">
+					<!-- Main footer article -->
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="footer_main_article"
+						group="footer_articles"
+						template="stock/article_generic.xml"
+						/>
+
+					<!-- Contact links -->
+					<div class="contact">
+						<h4><cms:text constant="phones" /></h4>
+						<!-- Office phone -->
+						<a
+							href="'tel:'.urlencode(Language::get_Text('phone_office'))"
+							cms:eval="href"
+							class="phone_office"
+							>
+							<cms:svg file="site_sprite.svg" symbol="icon-office"/>
+							<cms:text constant="office" />
+							<cms:text constant="phone_office" />
+						</a>
+
+						<!-- sells erez phone -->
+						<a
+							href="'tel:'.urlencode(Language::get_Text('phone_erez'))"
+							cms:eval="href"
+							class="phone_office"
+							>
+							<cms:svg file="site_sprite.svg" symbol="icon-user"/>
+							<cms:text constant="erez" />
+							<cms:text constant="phone_erez" />
+						</a>
+
+						<!-- sells gadi phone -->
+						<a
+							href="'tel:'.urlencode(Language::get_Text('phone_gadi'))"
+							cms:eval="href"
+							class="phone_office"
+							>
+							<cms:svg file="site_sprite.svg" symbol="icon-user"/>
+							<cms:text constant="gadi" />
+							<cms:text constant="phone_gadi" />
+						</a>
+
+						<!-- fax  -->
+						<a
+							href="'tel:'.urlencode(Language::get_Text('fax_number'))"
+							cms:eval="href"
+							class="phone_office"
+							>
+							<cms:svg file="site_sprite.svg" symbol="icon-fax"/>
+							<cms:text constant="fax" />
+							<cms:text constant="fax_number" />
+						</a>
+					</div>
+
+					<!-- Footer form -->
+					<div class="form_container">
+						<h3><cms:text constant="fill_details" /></h3>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_form"
+							/>
+					</div>
+				</div>
+
+				<!-- Google map -->
+				<div id="map"></div>
+			</footer>
+
+			<!-- Copyright -->
+			<cms:template file="stock/copyright.xml">
+				<param name="holder" value="copyright_holder"/>
+				<param name="text" value="copyright_text"/>
+				<param name="light" value=""/>
+			</cms:template>
 		</body>
 	</html>
 </document>
