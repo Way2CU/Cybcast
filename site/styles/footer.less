@@ -5,3 +5,200 @@
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
  * Authors: Iliya Melishev
  */
+
+footer {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	min-height: 800px;
+
+	background-image: url(../images/footer.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	color: @color_white;
+	background-color: black;
+	position: relative;
+
+	article {
+		padding: 2em 0;
+
+		p {
+			margin: 0;
+			font-size: 1.2em;
+		}
+	}
+}
+
+footer div.information,
+footer div#map {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+footer div.information {
+	padding-left: 100px;
+}
+
+footer div#map {
+	background-color: red;
+	width: 600px;
+	height: 600px;
+	margin-top: 2em;
+}
+
+footer div.information div.contact {
+	box-sizing: border-box;
+	margin-bottom: 100px;
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: @color_white;
+		margin-bottom: 1em;
+		transition: all 0.3s;
+
+		&:hover {
+			color: @color_turquoise;
+		}
+
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 25px;
+			height: 25px;
+			padding-left: 1em;
+		}
+	}
+}
+
+
+
+/*
+ * Contact form footer
+*/
+footer div.form_container {
+	padding-bottom: 1em;
+	box-sizing: border-box;
+	padding-left: 50px;
+
+	h3 {
+		color: @color_turquoise;
+		font-weight: 400;
+		text-align: center;
+		margin: 0;
+		padding: 0.5em;
+	}
+}
+
+footer div.form_container form {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+footer div.form_container form label {
+	display: block;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+}
+
+footer div.form_container form label input {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 0.5em;
+	background-color: black;
+	width: calc(~'100% - 80px - 1em');
+
+	border: 2px solid @color_turquoise;
+	border-image: linear-gradient(to right, @color_turquoise, black, @color_turquoise);
+	border-color: @color_turquoise;
+	border-image-slice: 1;
+	color: @color_white;
+	transition: all 0.3s;
+
+	&:hover,
+	&:focus {
+		border-color: @color_turquoise;
+		border-image: none;
+		border-image-slice: 1;
+		background-color: fade(@color_turquoise, 50%);
+	}
+}
+
+footer div.form_container form label span {
+	display: inline-block;
+	vertical-align: middle;
+	color: @color_turquoise;
+	padding: 0 0.5em;
+	width: 70px;
+}
+
+footer div.form_container form label span:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 20px;
+	margin-left: 0.5em;
+
+	background-image: url(../images/name.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer div.form_container form label:nth-of-type(2) span:before {
+	background-image: url(../images/phone.svg);
+}
+
+footer div.form_container form label:nth-of-type(3) span:before {
+	background-image: url(../images/email.svg);
+}
+
+footer div.form_container div.controls {
+	display: block;
+}
+
+footer div.form_container div.controls button {
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid @color_turquoise;
+	color: @color_turquoise;
+	background-color: fade(black, 20%);
+	font-weight: 700;
+	height: 38px;
+	padding: 0 1em;
+	transition: all 0.3s;
+
+	&:hover {
+		font-weight: 700;
+		background-color: fade(@color_turquoise, 50%);
+	}
+}
+
+div.copyright {
+	text-align: center;
+	background-color: black;
+	color: white;
+
+	background-position: calc(~'50% - 100px') center
+}
+
+/*
+ * Tablet
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	footer div#map {
+		width: 480px;
+	}
+
+	footer div.information {
+		padding-right: 1em;
+	}
+
+	div.copyright {
+		background-position: calc(~'(50% - 150px)') center;
+	}
+}
