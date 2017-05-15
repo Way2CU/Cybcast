@@ -37,6 +37,30 @@
 						/>
 				</div>
 			</header>
+
+			<!-- Section features -->
+			<section class="features">
+				<!-- Main article -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="main_features_article"
+					group="main_features_article"
+					template="stock/article_generic.xml"
+					/>
+
+				<div class="article_list">
+					<!-- List of articles with link, image and sprite by text_id -->
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features_articles"
+						template="stock/features_generic.xml"
+						>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</div>
+			</section>
 		</body>
 	</html>
 </document>
