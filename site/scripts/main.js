@@ -51,8 +51,29 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	Site.map(32.095943, 34.954468);
 };
 
+/**
+ * Create google map
+ */
+Site.map = function (langitude, latitude) {
+  var mapCanvas = document.getElementById('map');
+  var mapOptions = {
+    center: {lat: langitude, lng: latitude},
+    zoom: 17,
+    scrollwheel: false
+  }
+
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  new google.maps.Marker({
+    position:{lat: langitude, lng: latitude},
+    map: map,
+    title: "Cybcast"
+  });
+};
 
 // connect document `load` event with handler function
 $(Site.on_load);
