@@ -5,3 +5,67 @@
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
  * Authors: Iliya Melishev
  */
+
+
+/**
+ * Secton features
+ */
+
+section.features {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	text-align: center;
+
+	article {
+		padding: 1em 0;
+		text-align: center;
+		width: 600px;
+		margin: 0 auto;
+	}
+}
+
+section.features div.article_list li {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	width: 380px;
+	position: relative;
+	padding-bottom: 100px;
+	text-align: initial;
+
+
+	svg {
+		position: absolute;
+		top: 60px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 150px;
+		height: 150px;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 1.2em;
+		padding-bottom: 1em;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		.style_link(@color_turquoise, @color_turquoise);
+	}
+}
+
+// Who's a smart boy
+section.features div.article_list li:nth-of-type(3n+2) {
+	padding: 0 30px;
+}
+
