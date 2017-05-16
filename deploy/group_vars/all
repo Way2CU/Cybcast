@@ -1,6 +1,6 @@
 ---
 site:
-  domain: sample.com
+  domain: cybcast.co.il
   # subdomain: test
   # alias: domain.com
   root: httpdocs
