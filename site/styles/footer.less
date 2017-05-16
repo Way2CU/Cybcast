@@ -18,7 +18,7 @@ footer {
 	position: relative;
 
 	article {
-		padding: 2em 0;
+		padding-top: 100px;
 
 		p {
 			margin: 0;
@@ -43,12 +43,12 @@ footer div#map {
 	background-color: red;
 	width: 600px;
 	height: 600px;
-	margin-top: 2em;
+	margin-top: 100px;
 }
 
 footer div.information div.contact {
 	box-sizing: border-box;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 
 	a {
 		display: block;
@@ -70,8 +70,6 @@ footer div.information div.contact {
 		}
 	}
 }
-
-
 
 /*
  * Contact form footer
@@ -122,7 +120,7 @@ footer div.form_container form label input {
 		border-color: @color_turquoise;
 		border-image: none;
 		border-image-slice: 1;
-		background-color: fade(@color_turquoise, 50%);
+		background-color: fade(@color_turquoise, 20%);
 	}
 }
 
@@ -173,7 +171,8 @@ footer div.form_container div.controls button {
 
 	&:hover {
 		font-weight: 700;
-		background-color: fade(@color_turquoise, 50%);
+		background-color: @color_turquoise;
+		color: black;
 	}
 }
 
