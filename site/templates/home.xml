@@ -92,7 +92,8 @@
 							>
 							<cms:svg file="site_sprite.svg" symbol="icon-office"/>
 							<cms:text constant="office" />
-							<cms:text constant="phone_office" />
+							<span><cms:text constant="phone_office" /></span>
+
 						</a>
 
 						<!-- sells erez phone -->
@@ -103,7 +104,8 @@
 							>
 							<cms:svg file="site_sprite.svg" symbol="icon-user"/>
 							<cms:text constant="erez" />
-							<cms:text constant="phone_erez" />
+
+							<span><cms:text constant="phone_erez" /></span>
 						</a>
 
 						<!-- sells gadi phone -->
@@ -114,7 +116,8 @@
 							>
 							<cms:svg file="site_sprite.svg" symbol="icon-user"/>
 							<cms:text constant="gadi" />
-							<cms:text constant="phone_gadi" />
+							<span></span>
+							<span><cms:text constant="phone_gadi" /></span>
 						</a>
 
 						<!-- fax  -->
@@ -125,14 +128,14 @@
 							>
 							<cms:svg file="site_sprite.svg" symbol="icon-fax"/>
 							<cms:text constant="fax" />
-							<cms:text constant="fax_number" />
+							<span></span>
+							<span><cms:text constant="fax_number" /></span>
 						</a>
 					</div>
 
+					<!-- Div with backgound -->
 					<cms:mobile>
-						<div class="roof">
-							<cms:svg file="roof.svg"/>
-						</div>
+						<div class="roof"></div>
 					</cms:mobile>
 
 					<!-- Footer form -->
@@ -143,6 +146,14 @@
 							action="show"
 							text_id="contact_form"
 							/>
+
+						<!-- Bottom logo on mobile -->
+						<cms:mobile>
+							<!-- Logo -->
+							<a href="#" class="logo">
+								<cms:svg file="site_sprite.svg" symbol="icon-logo"/>
+							</a>
+						</cms:mobile>
 					</div>
 				</div>
 
@@ -150,14 +161,6 @@
 				<cms:desktop>
 					<div id="map"></div>
 				</cms:desktop>
-
-				<!-- Bottom logo on mobile -->
-				<cms:mobile>
-					<!-- Logo -->
-					<a href="#" class="logo">
-						<cms:svg file="site_sprite.svg" symbol="icon-logo"/>
-					</a>
-				</cms:mobile>
 			</footer>
 
 			<!-- Copyright -->

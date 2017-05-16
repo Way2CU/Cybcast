@@ -34,7 +34,7 @@ footer div.information article {
 
 footer div.information div.contact {
 	box-sizing: border-box;
-	padding-right: 1em;
+	padding: 0 2em;
 
 	h4 {
 		text-align: center;
@@ -45,6 +45,12 @@ footer div.information div.contact {
 		text-decoration: none;
 		color: @color_white;
 		margin-bottom: 1em;
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+		}
 
 		&:hover {
 			color: @color_turquoise;
@@ -61,14 +67,14 @@ footer div.information div.contact {
 }
 
 div.roof {
+	background-image: url(../images/roof.svg);
+	background-size: 500px auto;
+	background-position: center;
+	background-repeat: no-repeat;
+
 	display: block;
 	width: 100%;
-
-	svg {
-		display: block;
-		width: 100%;
-		height: 50px;
-	}
+	height: 80px;
 }
 
 /*
@@ -80,7 +86,6 @@ footer div.form_container {
 	background-position: center top;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
-	min-height: 330px;
 
 	h3 {
 		color: @color_turquoise;
@@ -172,14 +177,15 @@ footer div.form_container div.controls button {
 }
 
 footer a.logo {
-	background-color: black;
 	display: block;
+	margin: 0 auto;
+	padding-top: 50px;
 
 	svg {
 		display: block;
-		width: 100%;
-		height: 100px;
-		background-color: black;
+		margin: 0 auto;
+		width: 150px;
+		height: 80px;
 	}
 }
 
