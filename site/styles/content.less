@@ -31,6 +31,7 @@ section.features div.article_list li {
 	position: relative;
 	padding-bottom: 100px;
 	text-align: initial;
+	min-height: 550px;
 
 
 	svg {
@@ -51,7 +52,7 @@ section.features div.article_list li {
 	h3 {
 		margin: 0;
 		font-size: 1.2em;
-		padding-bottom: 1em;
+		padding: 1em 0;
 	}
 
 	p {
@@ -60,11 +61,22 @@ section.features div.article_list li {
 
 	a {
 		.style_link(@color_dark_turquoise, @color_turquoise);
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 
 section.features div.article_list li:nth-of-type(3n+2) {
 	padding: 0 30px;
+	padding-bottom: 100px;
+	a {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 
 /*
