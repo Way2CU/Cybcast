@@ -52,7 +52,7 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
-	Site.map(32.095943, 34.954468);
+	Site.map(32.131533, 34.895143);
 };
 
 /**
