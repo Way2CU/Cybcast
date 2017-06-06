@@ -56,10 +56,8 @@
 						name="articles"
 						action="show_list"
 						group="features_articles"
-						template="stock/features_generic.xml"
-						>
-						<param name="sprite" value="site_sprite.svg"/>
-					</cms:module>
+						template="custom_article.xml"
+						/>
 				</div>
 			</section>
 

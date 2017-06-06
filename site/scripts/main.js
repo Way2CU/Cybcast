@@ -52,8 +52,31 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+    /**
+     * Click handlers on link in section features
+     */
+    var section = document.querySelector('section.features');
+    var links = section.querySelectorAll('a');
+    for (var i =0; i < links.length; i++) {
+        links[i].addEventListener('click', handle_dialog_show);
+    }
+
+    //Create caracal dialog for articles
+    Site.dialog_article = new Caracal.Dialog();
+
+
 	Site.map(32.131533, 34.895143);
 };
+
+/**
+ * Click fuction to open dialog
+ */
+handle_dialog_show = function(event){
+    event.preventDefault();
+    Site.dialog_article
+        .set_content_from_url(this.getAttribute('href'))
+        .open();
+}
 
 /**
  * Create google map

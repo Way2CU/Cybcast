@@ -1,3 +1,4 @@
 {
-	"/": "home.xml"
+	"/": "home.xml",
+	"/articles/{article_text_id}": "dialog_content.xml"
 }

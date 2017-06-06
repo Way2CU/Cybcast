@@ -1,0 +1,13 @@
+<document>
+	<cms:module
+		name="articles"
+		action="show"
+		text_id="$_REQUEST['article_text_id']"
+		group="features_dialogs"
+		template="stock/article_generic.xml"
+		cms:eval="text_id"
+		>
+		<param name="title" value=""/>
+		<param name="title_tag" value="h3"/>
+	</cms:module>
+</document>

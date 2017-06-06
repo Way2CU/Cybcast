@@ -1,0 +1,9 @@
+<document>
+	<li>
+		<cms:svg file="site_sprite.svg" symbol="$params['text_id']" cms:eval="symbol"/>
+		<cms:markdown param="content" multilanguage="yes"/>
+		<a href="URL::make(array('article_text_id' => $params['text_id']))" cms:eval="href">
+			<cms:text constant="more_info"/>
+		</a>
+	</li>
+</document>
