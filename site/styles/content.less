@@ -111,9 +111,24 @@ div.dialog div.inner_content article img {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	section.features div.article_list li:nth-of-type(3n+2) {
 		padding: 0;
+		padding-bottom: 50px;
 	}
 
 	section.features div.article_list li:nth-of-type(odd) {
 		padding-left: 2em;
+	}
+
+	div.dialog {
+		max-width: initial;
+		width: 90vw;
+		min-height: 60vw;
+	}
+
+	div.dialog div.inner_content article {
+		min-height: 60vh;
+	}
+
+	div.dialog div.inner_content article img {
+		width: 50%;
 	}
 }
