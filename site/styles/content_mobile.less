@@ -79,18 +79,39 @@ section.features div.article_list li {
 /**
  * Dialog
  */
-div.dialog {
+div.dialog.articles {
 	max-width: initial;
 	width: 95vw;
+	border: 1px solid @color_turquoise;
+	background-color: fade(black, 90%);
 }
 
-div.dialog div.content div.inner_content {
+div.dialog.articles div.title {
+	display: none;
+}
+
+div.dialog.articles div.content div.inner_content {
 	overflow-y: auto;
 	height: 85vh;
 }
 
-div.dialog div.inner_content article img {
+div.dialog.articles div.inner_content article {
+	color: white;
+
+	h3 {
+		text-align: center;
+	}
+}
+
+div.dialog.articles div.inner_content article img {
 	display: block;
 	width: 100%;
+	border: 1px solid @color_turquoise;
+}
+
+div.dialog.articles div.command_bar a {
+	.style_link(@color_dark_turquoise, @color_turquoise);
+	background-color: transparent;
+	width: 100px;
 }
 
