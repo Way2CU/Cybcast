@@ -75,6 +75,7 @@ handle_dialog_show = function(event){
     event.preventDefault();
     Site.dialog_article
         .set_content_from_url(this.getAttribute('href'))
+        .add_class('articles')
         .open();
 }
 
