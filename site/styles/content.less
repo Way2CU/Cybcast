@@ -83,25 +83,53 @@ section.features div.article_list li:nth-of-type(3n+2) {
 /**
  * Dialog
  */
-div.dialog {
+div.dialog.articles {
+	top: 10%;
 	max-width: initial;
-	width: 70vw;
-	min-height: 40vw;
+	width: 960px;
+	border: 1px solid @color_turquoise;
+	background-color: fade(black, 90%);
 }
 
-div.dialog div.inner_content {
-	width: 100%;
+div.dialog.articles div.title {
+	display: none;
+}
+
+div.dialog.articles div.inner_content {
 	position: relative;
-	min-height: 600px;
-}
-
-div.dialog div.inner_content article {
 	box-sizing: border-box;
-	padding-right: 0.5em;
+	min-height: 500px;
 }
 
-div.dialog div.inner_content article img {
+div.dialog.articles div.inner_content article {
+	box-sizing: border-box;
+	padding: 0 0.5em;
+	width: 100%;
+	color: white;
+
+	h3 {
+		text-align: center;
+	}
+}
+
+div.dialog.articles div.inner_content article img {
+	width: 430px;
 	float: left;
+	margin-right: 1em;
+	border: 1px solid @color_turquoise;
+}
+
+div.dialog.articles div.command_bar {
+	background-image: url(../images/frontier_logo.svg);
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-position: 1em center;
+}
+
+div.dialog.articles div.command_bar a {
+	.style_link(@color_dark_turquoise, @color_turquoise);
+	background-color: transparent;
+	width: 100px;
 }
 
 /*
