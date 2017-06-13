@@ -161,6 +161,12 @@
 				</cms:desktop>
 			</footer>
 
+			<div class="download">
+				<a href="/site/downloads/fortinet_product_matrix.pdf">
+					<cms:text constant="download_link"/>
+				</a>
+			</div>
+
 			<!-- Copyright -->
 			<cms:template file="stock/copyright.xml">
 				<param name="holder" value="copyright_holder"/>
