@@ -161,11 +161,10 @@
 				</cms:desktop>
 			</footer>
 
-			<div class="download">
-				<a href="/site/downloads/fortinet_product_matrix.pdf">
-					<cms:text constant="download_link"/>
-				</a>
-			</div>
+			<!-- Download link inside of dialog -->
+			<a href="/site/downloads/fortinet_product_matrix.pdf" class="download">
+				<cms:text constant="download_link"/>
+			</a>
 
 			<!-- Copyright -->
 			<cms:template file="stock/copyright.xml">
