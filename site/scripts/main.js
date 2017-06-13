@@ -63,7 +63,7 @@ Site.on_load = function() {
 
     //Create caracal dialog for articles
     Site.dialog_article = new Caracal.Dialog();
-    Site.test = document.querySelector('div.download');
+    Site.test = document.querySelector('a.download');
     Site.dialog_article.add_control(Site.test);
 
 
