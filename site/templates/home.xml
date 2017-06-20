@@ -4,6 +4,8 @@
  	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<meta name="description" content="site_description" cms:constant="content"/>
+			<meta name="google-site-verification" content="Pr9Rk5vYrUOFoJRrgHJt8ajT1FtNm_xr5uRoPLYhQBw" />
 			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaft946kNnfRF4CR66TKYGdQ8kHKZrBgg"></script>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
