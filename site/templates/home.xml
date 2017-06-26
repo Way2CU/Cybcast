@@ -14,6 +14,9 @@
 			<cms:svg file="site_sprite.svg"/>
 			<!-- Header -->
 			<header>
+				<div class="language">
+					<cms:module name="language_menu" action="print"/>
+				</div>
 				<!-- Logo -->
 				<a href="#" class="logo">
 					<cms:svg file="site_sprite.svg" symbol="icon-logo"/>

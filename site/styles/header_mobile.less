@@ -19,6 +19,21 @@ header {
 		margin: 0;
 		padding: 0.5em 0;
 	}
+
+	div.language {
+		padding-top: 10px;
+		a {
+			color: @color_white;
+			text-decoration: none;
+			padding: 0 1em;
+			transition: all 0.3s;
+
+			&.active,
+			&:hover {
+				color: @color_turquoise;
+			}
+		}
+	}
 }
 
 header a.logo {
