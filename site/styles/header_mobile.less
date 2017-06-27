@@ -73,6 +73,9 @@ header div.form_container form {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 1em 0;
+	html[dir=ltr] & {
+		padding: 1em 0.5em;
+	}
 }
 
 header div.form_container form label {
@@ -109,6 +112,9 @@ header div.form_container form label span {
 	color: @color_turquoise;
 	padding: 0 0.5em;
 	width: 70px;
+	html[dir=ltr] & {
+		width: 80px;
+	}
 }
 
 header div.form_container form label span:before {
@@ -118,6 +124,11 @@ header div.form_container form label span:before {
 	width: 25px;
 	height: 20px;
 	margin-left: 0.5em;
+	html[dir=ltr] & {
+		margin-right: 0.5em;
+		margin-left: 0em;
+		width: 20px;
+	}
 
 	background-image: url(../images/name.svg);
 	background-repeat: no-repeat;
