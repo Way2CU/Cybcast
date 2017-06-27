@@ -1,3 +1,19 @@
 {
-    "site_title": "Cybcast Cyber & Security Solutions"
+    "site_title": "Cybcast Cyber & Security Solutions",
+    "site_description": "סייבקאסט בע''מ, חברת הפצה למוצרי אבטחת מידע וסייבר בין מוצריה המובילים של החברה ניתן למצוא את פתרונות של המובילה העולמית בתחום האבטחה חברת Fortinet.",
+    "fill_details": "Fill in the details and we will get back to you.",
+    "send": "Send",
+    "phones": "phones",
+    "office": "Office: ",
+    "erez": "Erez's Phone: ",
+    "gadi": "Gadi's Phone: ",
+    "fax": "fax: ",
+    "phone_office": "09-9607030",
+    "phone_erez": "050-6909001",
+    "phone_gadi": "054-5599989",
+    "fax_number": "09-9569565",
+    "copyright_holder": "Copyright &copy; 2017. by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>.",
+    "copyright_text": "All rights reserved.",
+    "more_info": "More Information",
+    "download_link": "Product matrix"
 }
